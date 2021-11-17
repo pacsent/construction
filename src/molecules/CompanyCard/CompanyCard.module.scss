@@ -1,0 +1,32 @@
+.main {
+  width: 350px;
+  height: 250px;
+  display: grid;
+  align-content: flex-start;
+  gap: 12px;
+  text-align: left;
+  text-decoration: none;
+  transition: 0.15s ease;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.image {
+  width: 260px;
+  height: 60px;
+  object-fit: contain;
+  position: relative;
+  margin: auto;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
