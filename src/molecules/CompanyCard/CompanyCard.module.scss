@@ -1,8 +1,12 @@
 .main {
   width: 350px;
-  height: 250px;
+  height: 230px;
+  flex: 1;
+  max-width: 450px;
+  min-width: 350px;
   display: grid;
   align-content: flex-start;
+  grid-gap: 12px;
   gap: 12px;
   text-align: left;
   text-decoration: none;

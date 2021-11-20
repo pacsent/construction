@@ -39,8 +39,17 @@ export const data: CompanyData[] = [
     id: 5,
     name: "Engie",
     logoUrl:
-      "https://www.engie-deutschland.de/themes/engie/assets/images/logo.svg",
-    specialties: ["Plumbing", "Heating"],
+      "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Engie_logo.svg/1200px-Engie_logo.svg.png",
+    specialties: ["Plumbing", "Heating", "Electrical"],
+    location: "Cologne, Germany",
+    website: "https://www.engie-deutschland.de",
+  },
+  {
+    id: 6,
+    name: "Engie",
+    logoUrl:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Engie_logo.svg/1200px-Engie_logo.svg.png",
+    specialties: ["Plumbing", "Heating", "Electrical"],
     location: "Cologne, Germany",
     website: "https://www.engie-deutschland.de",
   },

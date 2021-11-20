@@ -8,7 +8,7 @@ module.exports = {
       "www.kreatel.eu",
       "www.kreatel.eu",
       "www.caverion.de",
-      "www.engie-deutschland.de",
+      "upload.wikimedia.org",
     ],
   },
 }

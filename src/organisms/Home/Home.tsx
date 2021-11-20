@@ -3,7 +3,6 @@ import Head from "next/head"
 import { data } from "data/data"
 import CompanyList from "molecules/CompanyList/CompanyList"
 import NavBar from "molecules/NavBar/NavBar"
-import { specialties } from "types/types"
 import styles from "./Home.module.scss"
 
 interface Props {
@@ -23,18 +22,6 @@ function Home({ className }: Props) {
       </nav>
 
       <main className={styles.main}>
-        <input
-          className={styles.searchBox}
-          placeholder="Search by company name..."
-        />
-        <div className={styles.filters}>
-          {specialties.map((specialty, index) => (
-            <div className={styles.filter} key={`specialtyCheckbox-${index}`}>
-              <input type="checkbox" id={specialty} />{" "}
-              <label htmlFor={specialty}>{specialty}</label>
-            </div>
-          ))}
-        </div>
         <CompanyList data={data} />
       </main>
 
