@@ -6,7 +6,14 @@ interface Props {
 }
 
 function NavBar({ className }: Props) {
-  return <div className={clsx(className, styles.main)}>Construio</div>
+  return (
+    <div className={clsx(className, styles.main)}>
+      <div>
+        <strong>Construio</strong>
+      </div>
+      <div>Find a Subcontractor Today</div>
+    </div>
+  )
 }
 
 export default NavBar
