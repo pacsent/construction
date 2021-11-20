@@ -20,17 +20,14 @@ function CompanyList({ className, data }: Props) {
   }, [data])
 
   useEffect(() => {
-    console.log({ filters })
     const active: Specialty[] = []
     for (const [key, value] of Object.entries(filters)) {
-      console.log(`${key}: ${value}`)
       if (value) active.push(key)
     }
     setActiveFilters(active)
   }, [filters])
 
   useEffect(() => {
-    console.log(activeFilters)
     const filtering =
       activeFilters.length > 0 && activeFilters.length < specialties.length
     if (!searchTerm && !filtering) {

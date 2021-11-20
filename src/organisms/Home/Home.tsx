@@ -21,7 +21,6 @@ function Home({ className }: Props) {
     try {
       const res = await fetch("api/companies")
       const companiesData: CompaniesData = await res.json()
-      console.log({ companiesData })
 
       setData(companiesData?.companies)
     } catch (error) {
