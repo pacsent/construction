@@ -7,6 +7,10 @@ export interface CompanyData {
   website: string
 }
 
+export interface CompaniesData {
+  companies: CompanyData[]
+}
+
 export const specialties = [
   "Scaffolding",
   "Earthmoving",

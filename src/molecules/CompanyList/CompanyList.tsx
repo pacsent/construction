@@ -42,9 +42,11 @@ function CompanyList({ className, data }: Props) {
       company.name.toLowerCase().includes(searchTerm)
     )
 
-    results = results?.filter((company) =>
-      company.specialties?.some((s) => activeFilters.includes(s))
-    )
+    if (filtering) {
+      results = results?.filter((company) =>
+        company.specialties?.some((s) => activeFilters.includes(s))
+      )
+    }
 
     setCompanies(results)
   }, [activeFilters, searchTerm])

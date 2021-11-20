@@ -1,15 +1,34 @@
+import { useEffect, useState } from "react"
 import clsx from "clsx"
 import Head from "next/head"
-import { data } from "data/data"
 import CompanyList from "molecules/CompanyList/CompanyList"
 import NavBar from "molecules/NavBar/NavBar"
 import styles from "./Home.module.scss"
+import { CompaniesData, CompanyData } from "types/types"
 
 interface Props {
   className?: string
 }
 
 function Home({ className }: Props) {
+  const [data, setData] = useState<CompanyData[]>()
+
+  useEffect(() => {
+    fetchData()
+  }, [])
+
+  async function fetchData() {
+    try {
+      const res = await fetch("api/companies")
+      const companiesData: CompaniesData = await res.json()
+      console.log({ companiesData })
+
+      setData(companiesData?.companies)
+    } catch (error) {
+      alert("Failed to fetch data")
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -25,7 +44,7 @@ function Home({ className }: Props) {
         <CompanyList data={data} />
       </main>
 
-      <footer className={styles.footer}>Powered by NG</footer>
+      <footer className={styles.footer}>Copyright 2021 NG</footer>
     </div>
   )
 }

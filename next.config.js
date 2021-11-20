@@ -9,6 +9,7 @@ module.exports = {
       "www.kreatel.eu",
       "www.caverion.de",
       "upload.wikimedia.org",
+      "www.northstone-ni.co.uk",
     ],
   },
 }

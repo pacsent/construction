@@ -1,6 +1,6 @@
 import { CompanyData } from "types/types"
 
-export const data: CompanyData[] = [
+export const companiesData: CompanyData[] = [
   {
     id: 1,
     name: "Poro Fast Solutions",
@@ -23,7 +23,7 @@ export const data: CompanyData[] = [
     name: "Kreatel",
     logoUrl:
       "https://www.kreatel.eu/elements/images/uploads/4516/logo_s_napisom_(Mal%C3%A9).jpg",
-    specialties: ["Electrical"],
+    specialties: ["Electrical", "Scaffolding"],
     location: "Ľubotín, Slovakia",
     website: "https://www.kreatel.eu",
   },
@@ -46,11 +46,11 @@ export const data: CompanyData[] = [
   },
   {
     id: 6,
-    name: "Engie",
+    name: "Northstone",
     logoUrl:
-      "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Engie_logo.svg/1200px-Engie_logo.svg.png",
-    specialties: ["Plumbing", "Heating", "Electrical"],
-    location: "Cologne, Germany",
+      "https://www.northstone-ni.co.uk/Content/images/general/northstone-hp.png",
+    specialties: ["Earthmoving", "Project Engineering"],
+    location: "Belfast, Northern Ireland",
     website: "https://www.engie-deutschland.de",
   },
 ]
